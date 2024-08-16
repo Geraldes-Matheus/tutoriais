@@ -1,0 +1,13 @@
+oque estiver entre < > é codigo
+
+1° passo:
+        No seu repositório GitHub, copie a URL do repositório. Ela pode estar em formato HTTPS ou SSH.
+         Abra o terminal (ou o prompt de comando) e execute o seguinte comando para clonar o repositório:
+                                  < git clone <URL do repositório> >
+2° passo:
+         Navegue até a pasta do repositório clonado: < cd nome-do-repositorio
+         Copie ou mova o arquivo .ipynb do Jupyter Notebook para essa pasta. >
+3° passo:
+         Adicione o arquivo ao repositório local: < git add nome-do-arquivo.ipynb >
+         Faça um commit com uma mensagem descritiva: < git commit -m "Adiciona notebook com análise de dados" >
+         Envie as mudanças para o GitHub: < git push origin master >
