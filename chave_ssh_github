@@ -1,0 +1,28 @@
+No Linux
+1°)Abra o Terminal.
+
+2°)Gere a chave SSH:
+      Digite o seguinte comando: < ssh-keygen -t rsa -b 4096 -C "seu-email@exemplo.com" >
+  
+3°)Siga as instruções:
+      Pressione Enter para aceitar o local padrão do arquivo e defina uma senha se desejar.
+  
+4°)Adicione a chave SSH ao seu agente SSH:
+      Inicie o agente SSH: < eval "$(ssh-agent -s)" >
+      Adicione sua chave privada ao agente SSH: < ssh-add ~/.ssh/id_rsa >
+
+5°) Copie a chave pública:
+      Use o comando  para copiar a chave pública: < cat ~/.ssh/id_rsa.pub >
+      Em seguida, copie a saída manualmente.
+  
+Adicionando a chave SSH ao GitHub
+1°)Faça login no GitHub e vá para as configurações da sua conta.
+
+2°)Acesse as configurações de SSH:
+      Vá para Settings (Configurações) > SSH and GPG keys.
+  
+3°)Adicione uma nova chave SSH:
+    Clique em “New SSH key” ou “Add SSH key”.
+    Cole a chave pública que você copiou no campo “Key” e adicione um título para identificar a chave.
+    Clique em “Add SSH key” para salvar.
+
